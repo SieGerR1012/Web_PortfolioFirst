@@ -1,0 +1,16 @@
+/* Настройка стилей home */
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img img{
+    width: 35vw;
+}
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+}
+
