@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Сброс всех базовых настроек */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --bg-color: #1f242d;            /* Основной (тёмный) цвет фона */
+    --second-bg-color: #323946;     /* Вторичный цвет фона (светлее) */
+    --text-color:#fff;              /* Цвет текста (белый) */
+    --main-color: rgb(21, 200, 224); /* Главный цвет */
+}
+
+html{
+    font-size: 62.5%;       /* Базовый размер шрифта */
+    overflow-x: hidden;     /* Прячем горизонтальную прокрутку */
+}
+
+body{
+    background: var(--bg-color);    /* Цвет фона страницы */
+    color: var(--text-color);       /* Цвет текста на странице */
+}
+
+section{
+    min-height: 100vh;              /* Секция занимает всю высоту экрана */
+    padding: 100px 10% 20px;        /* Внутренние отступы секции */
+}
+
+/* //////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////// */
+

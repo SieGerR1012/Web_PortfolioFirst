@@ -1,0 +1,32 @@
+/* Настройка стилей header */
+.header{
+    position: fixed;            /* Шапка всегда видна при прокрутке */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: var(--bg-color);    /* Фон шапки */
+    display: flex;
+    justify-content: space-between; /* Логотип слева, навигация справа */
+    align-items: center;            /* Выравнивание по центру по вертикали */
+    z-index: 100;                   /* Шапка поверх остального контента */
+}
+
+.header .sticky{
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.logo{
+    font-size: 17px;
+    color: var(--main-color);
+    font-size: 600;
+    cursor: default;                /* Обычный курсор при наведении */
+}
+
+/* navbar Настройка стилей */
+.navbar a{
+    font-size: 17px;
+    color: var(--text-color);
+    margin-left: 40px;
+    transition: 3s;
+}
