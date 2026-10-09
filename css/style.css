@@ -16,7 +16,7 @@
     --bg-color: #1f242d;            /* Основной (тёмный) цвет фона */
     --second-bg-color: #323946;     /* Вторичный цвет фона (светлее) */
     --text-color:#fff;              /* Цвет текста (белый) */
-    --main-color: rgb(22, 188, 210); /* Главный цвет */
+    --main-color: rgb(21, 200, 224); /* Главный цвет */
 }
 
 html{
@@ -32,4 +32,114 @@ body{
 section{
     min-height: 100vh;              /* Секция занимает всю высоту экрана */
     padding: 100px 10% 20px;        /* Внутренние отступы секции */
+}
+
+/* Стиль кнопки btn */
+.btn{
+    display: inline-block;
+    padding: 10px 28px;
+    background: var(--main-color);
+    border-radius: 40px;
+    box-shadow: 0 0 10px var(--main-color); /* Свечение вокруг кнопки */
+    font-size: 16px;
+    color: var(--second-bg-color);          /* Цвет текста на кнопке */
+    letter-spacing: 1px;
+    font-weight: 600;                       /* Полужирное начертание */
+    transition: .5s ease;                   /* Плавное изменение при наведении */
+}
+
+.btn:hover{
+    box-shadow: none;   /* Убираем свечение кнопки при наведении */
+}
+
+/* //////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////// */
+
+/* Настройка стилей header */
+.header{
+    position: fixed;                /* Шапка всегда видна при прокрутке */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: var(--bg-color);    /* Фон шапки */
+    display: flex;
+    justify-content: space-between; /* Логотип слева, навигация справа */
+    align-items: center;            /* Выравнивание по центру по вертикали */
+    z-index: 100;                   /* Шапка поверх остального контента */
+}
+
+.header .sticky{
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.logo{
+    font-size: 25px;
+    color: var(--main-color);
+    font-size: 600;
+    cursor: default;                /* Обычный курсор при наведении */
+}
+
+/* Стили navbar */
+.navbar a{
+    font-size: 17px;
+    color: var(--text-color);
+    margin-left: 40px;
+    transition: .3s;
+}
+
+.navbar a:hover{
+    color: var(--main-color);       /* Изменение цвета пункта меню при наведении */
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: var(--main-color);
+}
+
+/* Иконка бургер-меню (видна только на мобильных устройствах) */
+#menu-icon{
+    font-size: 36px;
+    color: var(--main-color);
+    display: none;                  /* По умолчанию скрыта */
+}
+
+/* //////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////// */
+
+/* Настройка стилей footer */
+.footer{
+    display: flex;
+    justify-content: space-between; /* Текст слева, стрелка справа */
+    align-items: center;            /* Центрирование по вертикали */
+    flex-wrap: wrap;                /* Перенос при нехватке места */
+    padding: 20px 10%;              /* Внутренние отступы */
+    background: var(--second-bg-color); /* Фон подвала */
+}
+
+/* Текст копирайта */
+.footer-text p{
+    font-size: 16px;
+}
+
+/* Кнопка прокрутки вверх */
+.footer-iconTop a{
+    display: inline-flex;
+    justify-content: center;      /* Центрирование иконки по горизонтали */
+    align-items: center;          /* Центрирование иконки по вертикали */
+    padding: 8px;                 /* Внутренние отступы */
+    background: var(--main-color);/* Фон кнопки */
+    border-radius: 8px;           /* Скругление углов */
+    transition: .5s ease;         /* Плавное изменение при наведении */
+}
+
+/* Свечение вокруг кнопки при наведении */
+.footer-iconTop a:hover{
+    box-shadow: 0 0 10px var(--main-color);
+}
+
+/* Иконка внутри кнопки */
+.footer-iconTop a i{
+    font-size: 24px;                /* Размер иконки */
+    color: var(--second-bg-color);  /* Цвет иконки */
 }
